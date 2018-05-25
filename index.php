@@ -2,4 +2,5 @@
 echo 'test githum';
 echo '123';
 echo phpinfo();
-$a = '';
+$a = '2';
+$b = 3;
