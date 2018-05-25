@@ -4,4 +4,3 @@ echo '123';
 echo phpinfo();
 $a = '2';
 $b = 3;
-$a + $b ;
