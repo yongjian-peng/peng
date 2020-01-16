@@ -182,7 +182,7 @@ for($i=0; $i<10;$i++) {
     $id = $work->nextId();
     echo $id . "<br>";
 }
-
+echo 111;
 echo '<br/>';
 
 /*$works = new IdWork(1024);
