@@ -49,3 +49,28 @@ var_dump($r);
 
 第六题：
 
+<?php
+
+$arr1 = [
+        ['fid' => 1, 'tid' => 1, 'name' => 'Name1'],
+        ['fid' => 1, 'tid' => 2, 'name' => 'Name2'],
+        ['fid' => 1, 'tid' => 5, 'name' => 'Name3'],
+        ['fid' => 5, 'tid' => 7, 'name' => 'Name4'],
+        ['fid' => 3, 'tid' => 1, 'name' => 'Name5'],
+        ['fid' => 3, 'tid' => 1, 'name' => 'Name6'],
+    ];
+
+
+function array_ss($arr) {
+    
+    $res = [];
+    
+    foreach($arr as $k => $v) {
+        $res[$v['fid']][] = ['tid' => $v['tid'], 'name' => $v['name']];
+    }
+    return $res;
+}
+
+$r = array_ss($arr1);
+
+var_dump($r);
