@@ -74,3 +74,15 @@ function array_ss($arr) {
 $r = array_ss($arr1);
 
 var_dump($r);
+
+第七题：
+ 思路是：需要支持多级的话，是需要对传入参数使用.来切分字符串抓换成数组，计算数组的长度，判断是否存在值的几层。
+    需要使用递归的方式来查询，根据几层的数量，来判断当前传入层数，对应数组下标的值，判断是否存在。如果没有的话，直接break 并求返回false;
+
+
+第八题:
+
+1. select c1.province_id,c1.city,p1.province form city c1 inner join province p1 on c1.province_id = p1.province;
+2. select c1.provinceid,p1.province,count(1) pronums from city c1 inner join province p1 on c1.provinceid=p1.id
+group by c1.provinceid,p1.province;
+3.
